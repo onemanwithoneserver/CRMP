@@ -6,7 +6,7 @@ import { Layout } from "./Layout";
 import { Home as MobileHome } from "./mobile-view/Home";
 import { Home as DesktopHome } from "./desktop-view/Home";
 
-const mobilePages = ["AppLoading", "Home", "Explore", "Profile"] as const;
+const mobilePages = ["AppLoading", "Skeleton","Home", "Explore", "Profile"] as const;
 const desktopPages = ["Dashboard", "Projects", "Team", "Settings"] as const;
 
 

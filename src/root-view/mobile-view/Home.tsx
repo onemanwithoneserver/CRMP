@@ -1,5 +1,7 @@
 import { useState, useCallback } from "react";
 import AppLoading from "./appLoading";
+import { Skeleton } from "./Skeleton";
+import { REMPHome } from "./REMPHome";
 
 interface HomeProps {
   activePage: string;
@@ -13,9 +15,10 @@ export function Home({ activePage }: HomeProps) {
   return (
     <div className="flex flex-col h-full">
       <div className="flex-1 overflow-y-auto p-[2px]">
-        {activePage === "Home" && <HomeContent />}
+        {activePage === "Home" && <REMPHome />}
         {activePage === "Explore" && <ExploreContent />}
         {activePage === "Profile" && <ProfileContent />}
+        {activePage === "Skeleton" && <Skeleton />}
       </div>
     </div>
   );
